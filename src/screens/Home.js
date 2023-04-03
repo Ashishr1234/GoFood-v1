@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Carausal from "../components/Carausal";
+// import Carausal from "../components/Carausal";
 import Card from "../components/Card";
 
 function Home() {
@@ -65,7 +65,7 @@ function Home() {
       </div>
       <div className='container'>
         {
-          foodCat != []
+          foodCat !== []
           ? foodCat.map((data)=>{
             return (<div className="row mb-3">
               <div key={data._id} className="fs-3 m-3">

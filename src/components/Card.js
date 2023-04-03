@@ -1,15 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useDispatchCart, useCart } from './ContextReducer';
+import { useDispatchCart
+  // , useCart 
+} from './ContextReducer';
 
 function Card(props) {
   let dispatch = useDispatchCart();
-  let data = useCart();
+  // let data = useCart();
   const priceRef = useRef();
   let options = props.options;
   let priceOptions = Object.keys(options);
   const [qty, setQty] = useState(1);
   const [size, setSize] = useState("");
-  const foodItem = props.item;
+  // const foodItem = props.item;
 
   const handleAddToCart = async() => {
     // let food = []
