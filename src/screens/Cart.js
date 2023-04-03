@@ -35,13 +35,14 @@ function Cart() {
     });
     // console.log('***email***', email);
     console.log("Order Responses", response);
+    console.log("resp");
     if (response.status === 200) {
       dispatch({ type: "DROP" });
     }
   };
 
 
-  
+
   let totalPrice = data.reduce((total, food) => total + food.price, 0);
   return (
     <div>
