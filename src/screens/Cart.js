@@ -40,6 +40,8 @@ function Cart() {
     }
   };
 
+
+  
   let totalPrice = data.reduce((total, food) => total + food.price, 0);
   return (
     <div>
